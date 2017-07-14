@@ -1,4 +1,5 @@
 /////////////////////////////////////////////////////Include headers////////////////////////////////////////////////////
+#include <iostream>
 #include "SerialPort.h"
 ///////////////////////////////////////////////////////Constructor//////////////////////////////////////////////////////
 SerialPort::SerialPort(char *portName)
@@ -74,6 +75,7 @@ bool SerialPort::writeSerialPort(char *buffer, unsigned int buf_size)
     DWORD bytesSend;
 
     if (!WriteFile(this->handler, (void*) buffer, buf_size, &bytesSend, 0)){
+        std::cout << GetLastError() << std::endl;
         ClearCommError(this->handler, &this->errors, &this->status);
         return false;
     }

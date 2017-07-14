@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/RobotController.cpp" "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj"
-  "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/SerialPort.cpp" "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj"
-  "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/main.cpp" "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj"
+  "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/RobotController.cpp" "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj"
+  "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/SerialPort.cpp" "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj"
+  "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/main.cpp" "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/cmake-build-debug/CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

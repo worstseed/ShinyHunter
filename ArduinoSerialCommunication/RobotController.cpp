@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////Include headers////////////////////////////////////////////////////
 #include "RobotController.h"
 ///////////////////////////////////////////////////////Send key/////////////////////////////////////////////////////////
-void RobotController::sendKey(SerialPort arduino, std::string sendString)
+void RobotController::sendKey(SerialPort &arduino, std::string sendString)
 {
     char *c_string = new char[sendString.size() + 1];
     std::copy(sendString.begin(), sendString.end(), c_string);
@@ -13,31 +13,31 @@ void RobotController::sendKey(SerialPort arduino, std::string sendString)
     delete[] c_string;
 }
 ////////////////////////////////////////////////////////Press A/////////////////////////////////////////////////////////
-void RobotController::pressBtn_A(SerialPort arduino)
+void RobotController::pressBtn_A(SerialPort &arduino)
 {
     std::string sendString ("a");
     sendKey(arduino, sendString);
 }
 ///////////////////////////////////////////////////////Soft Reset///////////////////////////////////////////////////////
-void RobotController::softReset(SerialPort arduino)
+void RobotController::softReset(SerialPort &arduino)
 {
     std::string sendString ("S");
     sendKey(arduino, sendString);
 }
 /////////////////////////////////////////////////Un-press all buttons///////////////////////////////////////////////////
-void RobotController::unPressAllButtons(SerialPort arduino)
+void RobotController::unPressAllButtons(SerialPort &arduino)
 {
     std::string sendString ("0");
     sendKey(arduino, sendString);
 }
 ///////////////////////////////////////////////////Take LDR reading/////////////////////////////////////////////////////
-void RobotController::takeLDRReading(SerialPort arduino)
+void RobotController::takeLDRReading(SerialPort &arduino)
 {
     std::string sendString ("C");
     sendKey(arduino, sendString);
 }
 /////////////////////////////////////////////////Menage bottom screen///////////////////////////////////////////////////
-void RobotController::bottomScreenLDR(SerialPort arduino)
+void RobotController::bottomScreenLDR(SerialPort &arduino)
 {
     byte b1 = 0;
     int LDR_Reading = 0;

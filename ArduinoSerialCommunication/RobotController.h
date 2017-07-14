@@ -20,13 +20,13 @@ public:
     ~RobotController() { }
     // Actual robot controller
     // Send specific char to Arduino for specific action
-    void sendKey(SerialPort arduino, std::string string);
+    void sendKey(SerialPort &arduino, std::string string);
     // Different actions
-    void softReset(SerialPort arduino);
-    void unPressAllButtons(SerialPort arduino);
-    void pressBtn_A(SerialPort arduino);
-    void bottomScreenLDR(SerialPort arduino);
-    void takeLDRReading(SerialPort arduino);
+    void softReset(SerialPort &arduino);
+    void unPressAllButtons(SerialPort &arduino);
+    void pressBtn_A(SerialPort &arduino);
+    void bottomScreenLDR(SerialPort &arduino);
+    void takeLDRReading(SerialPort &arduino);
     // Protect class
     char* PortName();
     long TimeCurrent();

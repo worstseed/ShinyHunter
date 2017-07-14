@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Maciek/Dropbox/ArduinoSerialCommunication
+# Install script for directory: C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Maciek/Dropbox/ArduinoSerialCommunication/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Maciek/Dropbox/GITHUB/SinyHunter/ArduinoSerialCommunication/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
