@@ -1,4 +1,4 @@
-# SinyHunter
+# ShinyHunter
 ArduinoSketches - translating chars to action  
 
 SerialPort.h, SerialPort.cpp - connection and communication  
