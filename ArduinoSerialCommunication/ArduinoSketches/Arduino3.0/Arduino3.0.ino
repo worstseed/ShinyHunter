@@ -38,20 +38,20 @@ char char_out;
 void setup()
 {
   Serial.begin(BAUD);
-//  myservo_1.attach(7);
-//  myservo_2.attach(8);
+  myservo_1.attach(7);
+  myservo_2.attach(8);
   myservo_3.attach(3);
-//  myservo_4.attach(2);
-//  myservo_5.attach(6);
+  myservo_4.attach(2);
+  myservo_5.attach(6);
 //  pinMode(LDR, INPUT);
 
-//  myservo_1.write(BUTTON_OFF); 
-//  myservo_2.write(BUTTON_OFF); 
+  myservo_1.write(BUTTON_OFF); 
+  myservo_2.write(BUTTON_OFF); 
   myservo_3.write(BUTTON_OFF);
-//  myservo_4.write(BUTTON_OFF);
-//  myservo_5.write(BUTTON_OFF);
+  myservo_4.write(BUTTON_OFF);
+  myservo_5.write(BUTTON_OFF);
 
-pinMode(LED_BUILTIN, OUTPUT);
+//  pinMode(LED_BUILTIN, OUTPUT);
 }
 /////////////////////////////////////////Legend////////////////////////////////////////////
 /*  - Line Feed - 10 - All buttons un-pressed
@@ -75,22 +75,50 @@ pinMode(LED_BUILTIN, OUTPUT);
 //////////////////////////////////////Infinite Loop////////////////////////////////////////
 void loop()
 {
-  String input;
-  if (Serial.available() > 0)
-  {   
-    input = Serial.readStringUntil('\n');  
+     String input;
+     if (Serial.available() > 0)
+     {   
+         input = Serial.readStringUntil('\n');
 
-    if (input.equals("a")) {
-      pressBtn_A();
-    } else {
-      pressBtn_Y();
-      }
-  } else {
-    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(1000);                       // wait for a second
-    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-    delay(1000);   
-    }
+         if(!input.equals("10"))
+             unPressAllButtons();  
+
+          if (input.equals("B")){
+            takeReadingAndSendInfo_LDR();
+          } else if (input.equals("C")) {
+            takeReadingAndSendFirstByte_LDR();
+          } else if (input.equals("8")) {
+             holdArrow_up();
+          } else if (input.equals("e")) {
+            pressArrow_up();
+          } else if (input.equals("4")) {
+            holdArrow_left();
+          } else if (input.equals("s")) {
+            pressArrow_left();
+          } else if (input.equals("2")) {
+            holdArrow_down();
+          } else if (input.equals("d")) {
+            pressArrow_down();
+          } else if (input.equals("6")) {
+            holdArrow_right();
+          } else if (input.equals("f")) {
+            pressArrow_right();
+          } else if (input.equals("y")) {
+            pressBtn_Y();
+          } else if (input.equals("b")) {
+            pressBtn_B();
+          } else if (input.equals("a")) {
+            pressBtn_A();
+          } else if (input.equals("x")) {
+            pressBtn_X();
+          } else if (input.equals("S")) {
+            softReset();
+          } else if (input.equals("W")) {
+            wonderTrade();
+          } else if (input.equals("0")) {
+            unPressAllButtons();
+          } 
+     }
 }
 /////////////////////////////////////When sending data/////////////////////////////////////
 //void serialEvent()
@@ -100,64 +128,55 @@ void loop()
 //     {   
 //         input = Serial.readStringUntil('\n');
 //
-////         if(letter != 10)
-////             unPressAllButtons();  
+//         if(!input.equals("10"))
+//             unPressAllButtons();  
 //
-//            if (input.equals("a")){
+//          if (input.equals("B")){
+//            takeReadingAndSendInfo_LDR();
+//          } else if (input.equals("C")) {
+//            takeReadingAndSendFirstByte_LDR();
+//          } else if (input.equals("8")) {
+//             holdArrow_up();
+//          } else if (input.equals("e")) {
+//            pressArrow_up();
+//          } else if (input.equals("4")) {
+//            holdArrow_left();
+//          } else if (input.equals("s")) {
+//            pressArrow_left();
+//          } else if (input.equals("2")) {
+//            holdArrow_down();
+//          } else if (input.equals("d")) {
+//            pressArrow_down();
+//          } else if (input.equals("6")) {
+//            holdArrow_right();
+//          } else if (input.equals("f")) {
+//            pressArrow_right();
+//          } else if (input.equals("y")) {
+//            pressBtn_Y();
+//          } else if (input.equals("b")) {
+//            pressBtn_B();
+//          } else if (input.equals("a")) {
 //            pressBtn_A();
-//            Serial.println("Btn clickeed!");
-//            } else {
-//              Serial.println("Not clicked");
-//            }
-            
-//         switch (letter)
-//         {
-//             case 66: // 'B'
-//                 takeReadingAndSendInfo_LDR(); break;
-//             case 67: // 'C'
-//                 takeReadingAndSendFirstByte_LDR(); break;
-//             case 56: // '8'
-//                 holdArrow_up(); break;
-//             case 101: // 'e'
-//                 pressArrow_up(); break;
-//             case 52: // '4'
-//                 holdArrow_left(); break; 
-//             case 115: // 's'
-//                 pressArrow_left(); break;
-//             case 50: // '2'
-//                 holdArrow_down(); break; 
-//             case 100: // 'd'
-//                 pressArrow_down(); break;
-//             case 54: // '6'
-//                 holdArrow_right(); break;
-//             case 102: // 'f'
-//                 pressArrow_right(); break;
-//             case 121: // 'y'
-//                 pressBtn_Y(); break;
-//             case 98: // 'b'
-//                 pressBtn_B(); break;
-//             case 97: // 'a'
-//                 pressBtn_A(); break;
-//             case 120: // 'x'
-//                 pressBtn_X(); break;
-//             case 83: // 'S'
-//                 softReset(); break;
-//             case 87: // 'W'
-//                 wonderTrade(); break;
-//             case 48: // '0'
-//                 unPressAllButtons(); break;
-//         }
+//          } else if (input.equals("x")) {
+//            pressBtn_X();
+//          } else if (input.equals("S")) {
+//            softReset();
+//          } else if (input.equals("W")) {
+//            wonderTrade();
+//          } else if (input.equals("0")) {
+//            unPressAllButtons();
+//          } 
 //     }
 // }
 /////////////////////////////////////Custom Functions//////////////////////////////////////
 ///////////////////////////////////Un-press all buttons////////////////////////////////////
 void unPressAllButtons()
 {
-//  myservo_1.write(BUTTON_OFF); 
-//  myservo_2.write(BUTTON_OFF); 
+  myservo_1.write(BUTTON_OFF); 
+  myservo_2.write(BUTTON_OFF); 
   myservo_3.write(BUTTON_OFF);
-//  myservo_4.write(BUTTON_OFF);
-//  myservo_5.write(BUTTON_OFF);
+  myservo_4.write(BUTTON_OFF);
+  myservo_5.write(BUTTON_OFF);
 }
 ///////////////////////////////////////Wonder Trade////////////////////////////////////////
 void wonderTrade()

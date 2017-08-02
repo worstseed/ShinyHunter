@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication
+CMAKE_SOURCE_DIR = C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ArduinoSerialCommunication.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/ArduinoSerialCommunication.dir/flags.make
 
 CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj: CMakeFiles/ArduinoSerialCommunication.dir/flags.make
 CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\main.cpp
 
 CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\main.cpp > CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\main.cpp > CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.i
 
 CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\main.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\main.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\main.cpp.s
 
 CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/ArduinoSerialCommunication.dir/main.cpp.obj.provides.build: CMakeFile
 
 CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj: CMakeFiles/ArduinoSerialCommunication.dir/flags.make
 CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj: ../SerialPort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\SerialPort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\SerialPort.cpp
 
 CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\SerialPort.cpp > CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\SerialPort.cpp > CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.i
 
 CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\SerialPort.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\SerialPort.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\SerialPort.cpp.s
 
 CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj.requires:
 
@@ -106,16 +106,16 @@ CMakeFiles/ArduinoSerialCommunication.dir/SerialPort.cpp.obj.provides.build: CMa
 
 CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj: CMakeFiles/ArduinoSerialCommunication.dir/flags.make
 CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj: ../RobotController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\RobotController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.obj -c C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\RobotController.cpp
 
 CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\RobotController.cpp > CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\RobotController.cpp > CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.i
 
 CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\RobotController.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\RobotController.cpp -o CMakeFiles\ArduinoSerialCommunication.dir\RobotController.cpp.s
 
 CMakeFiles/ArduinoSerialCommunication.dir/RobotController.cpp.obj.requires:
 
@@ -144,7 +144,7 @@ ArduinoSerialCommunication.exe: CMakeFiles/ArduinoSerialCommunication.dir/build.
 ArduinoSerialCommunication.exe: CMakeFiles/ArduinoSerialCommunication.dir/linklibs.rsp
 ArduinoSerialCommunication.exe: CMakeFiles/ArduinoSerialCommunication.dir/objects1.rsp
 ArduinoSerialCommunication.exe: CMakeFiles/ArduinoSerialCommunication.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ArduinoSerialCommunication.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ArduinoSerialCommunication.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ArduinoSerialCommunication.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -163,6 +163,6 @@ CMakeFiles/ArduinoSerialCommunication.dir/clean:
 .PHONY : CMakeFiles/ArduinoSerialCommunication.dir/clean
 
 CMakeFiles/ArduinoSerialCommunication.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug C:\Users\Maciek\Dropbox\GITHUB\SinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles\ArduinoSerialCommunication.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug C:\Users\Maciek\Dropbox\GITHUB\ShinyHunter\ArduinoSerialCommunication\cmake-build-debug\CMakeFiles\ArduinoSerialCommunication.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ArduinoSerialCommunication.dir/depend
 
